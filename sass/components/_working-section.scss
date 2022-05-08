@@ -1,24 +1,25 @@
 .working {
     padding-top: 0;
+        &__head {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.166em;
+        margin-bottom: 30px;
+        }
+        &__list {
+        display: flex;
+        }
+        &__list-item:not(:last-child){
+        margin-right: 30px;
+        }
 }
-.working__head {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.166em;
-    margin-bottom: 30px;
-}
+
 .working .conteiner {
     display: flex;
     align-items: center;
 }
 .what {
     flex-direction: column;
-}
-.working__list {
-    display: flex;
-}
-.working__list-item:not(:last-child){
-    margin-right: 30px;
 }
 .contens {
     position: relative;

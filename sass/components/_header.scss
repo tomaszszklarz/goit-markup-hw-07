@@ -6,10 +6,33 @@
 }
 .web {
     display: flex;
+        &__list  {
+        position: relative;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+        }
+        &__list:not(:last-child) {
+        margin-right: 46px;
+        }
+        &__link{
+        color: #212121;
+        font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.142em;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: var(--secend-color);
+            }
+        }
 }
-.web__list:not(:last-child) {
-    margin-right: 46px;
-}
+
 
 .header {
     border: 1px solid #ECECEC;
@@ -23,30 +46,8 @@
     color: var(--secend-color);
     }
 }
-.web__link{
-    color: #212121;
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: var(--secend-color);
-    }
-}
-.web__list  {
-    position: relative;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-   
-}
+
 .web__list--active::before {
     content: "";
     width: 100%;
@@ -82,24 +83,14 @@
     fill: var(--secend-color);
     color: var(--secend-color);   
     }
-}
-.mail__icons {
-    margin-right: 10px;
-    width: 12px;
-    height: 16px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.phone__icons {
-    margin-right: 10px;
-    width: 10px;
-    height: 16px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &__icons {
+        margin-right: 10px;
+        width: 12px;
+        height: 16px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
 }
 .phone {
     display: flex;
@@ -113,4 +104,12 @@
     fill: var(--secend-color);
     color: var(--secend-color);  
     }
+        &__icons {
+        margin-right: 10px;
+        width: 10px;
+        height: 16px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
 }

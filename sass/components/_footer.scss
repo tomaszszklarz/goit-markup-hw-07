@@ -11,49 +11,50 @@
 .header__contact {
   margin-top: 9px;
 }
-.joint {
-  font-size: 14px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-}
 .down {
   display: flex;
 }
 .socjal {
   display: flex;
   padding-right: 10px;
-}
-.socjal__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: rgba(255, 255, 255, 1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: rgba(255, 255, 255, 1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-  background-color: var(--secend-color);
-  }
+      &:hover,
+      &:focus {
+      background-color: var(--secend-color);
+      }
+    }
+    &__icons {
+    width: 20px;
+    height: 20px;
+    }
 }
-.socjal__icons {
-  width: 20px;
-  height: 20px;
-}
+
+
 .joint {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+    &__address {
+    display: flex;
+    margin-top: 20px;
+    }
 }
-.joint__address {
-  display: flex;
-  margin-top: 20px;
-}
+
 .sign__text {
   color: #fff;
   font-size: 14px;
