@@ -35,10 +35,11 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.socjal__link:hover,
-.socjal__link:focus {
+
+  &:hover,
+  &:focus {
   background-color: var(--secend-color);
+  }
 }
 .socjal__icons {
   width: 20px;
@@ -74,11 +75,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 16px;
-}
-.sign__mail:hover,
-.sign__mail:focus {
+
+  &:hover,
+  &:focus {
   border: 1px solid var(--secend-color);
+  }
 }
+
 .sign__btn {
   background-color: var(--secend-color);
   color: #fff;
@@ -106,10 +109,11 @@
 }
 .logo__text-down {
   color: white;
-}
-.logo__text-down:hover,
-.logo__text-down:active {
+
+  &:hover,
+  &:active {
   color: var(--secend-color);
+  }
 }
 .address__down {
   color: white;

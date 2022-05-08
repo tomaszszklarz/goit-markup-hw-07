@@ -47,12 +47,13 @@
 }
 .box {
     margin-top: 30px;
+
+    &:hover {
+    border: 1px solid var(--secend-color);
+    cursor: pointer;  
+    }
 }
-.box:hover {
-   border: 1px solid var(--secend-color);
-   cursor: pointer;
-   
-}
+
 
 .box__caption {
     padding-left: 24px;

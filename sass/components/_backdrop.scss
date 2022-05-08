@@ -65,7 +65,15 @@
     box-sizing: border-box;
     border-radius: 4px;
     transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    border: 1px solid var(--secend-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none; 
+    }
 }
 .form__btn {
     background-color: var(--secend-color);
@@ -88,25 +96,25 @@
     height: 40px;
     padding-left: 45px;
     transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-}
-.form__input:hover,
-.form__input:focus,
-.coment:hover,
-.coment:focus {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
     border: 1px solid var(--secend-color);
     box-sizing: border-box;
     border-radius: 4px;
     outline: none; 
-}
-.form__label-item:hover,
-.form__label-item:focus{
-    fill: var(--secend-color);
+    }
 }
 .form__label-item {
     position: relative;
     display: block;
     fill: #212121;
+
+    &:hover,
+    &:focus{
+    fill: var(--secend-color);
+}
 }
 
 .form__input-image {

@@ -41,11 +41,12 @@
     border-radius: 4px;
     width: 200px;
     height: 50px;
-   
-}
-.conteiner__btn:hover, .conteiner__btn:focus, .conteiner__btn:active {
+
+    &:hover,
+    &:focus,
+    &:active {
     color: var(--secend-color);
     cursor: pointer;
-    color: white;
-    
+    color: white;  
+    }
 }
